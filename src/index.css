@@ -1,20 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
-.form-control:focus {
-    box-shadow: 0 0 0 0.05rem rgba(0,123,255,.25);
+
+/* Global */
+body{
+	font: normal normal 600 16px/24px Open Sans;
 }
-.sign_up_heading{
+
+/* Header */
+header{
+	padding: 25px 0;
+}
+.header-title{
 	color:#1BA6E1;
 	font-size: 25px;
 	font-weight: 500;
 	font: normal normal 600 25px/34px Open Sans;
+	margin-top: 20px;
 }
-.sign_up{
+
+/* Onboarding */
+.onboarding-page_title{
 	font-size: 25px;
 	font-weight: 500;
 	font: normal normal 600 26px/36px Open Sans;
 	color: black;
+	margin-top: 5px;
+	margin-bottom: 50px;
 }
+
+.onboarding-page_sub_title{
+	font: normal normal normal 14px/19px Open Sans;
+	margin-top: -40px;
+	margin-bottom: 50px;
+}
+/* Form */
+
+.input-group-prepend .input-group-text{
+	background-color: transparent;
+}
+.form-control:focus {
+    box-shadow: 0 0 0 0.05rem rgba(0,123,255,.25);
+}
+.onboarding-btn{
+	background-color: #1BA7E2 !important;
+	border-color: #1BA7E2 !important;
+	margin-top: 50px;
+}
+
 label{
 	font: normal normal 600 13px/18px Open Sans;
 	color: #333333DE;
@@ -48,3 +80,62 @@ height: 44px;
 		margin-left: 15% !important;
 	}
   }
+
+  #partitioned {
+	padding-left: 15px;
+	letter-spacing: 42px;
+	border: 0;
+	background-image: linear-gradient(to left, black 70%, rgba(255, 255, 255, 0) 0%);
+	background-position: bottom;
+	background-size: 50px 1px;
+	background-repeat: repeat-x;
+	background-position-x: 35px;
+	width: 320px;
+	min-width: 320px;
+	outline: none;
+  }
+  
+  #divInner{
+	left: 0;
+	position: sticky;
+	margin-top: 25px;;
+  }
+  
+  #divOuter{
+	width: 300px; 
+	overflow: hidden;
+	outline: none;
+	margin-top: 15px;
+  }
+
+  @media screen and (max-width: 736px) {
+  #divOuter{
+	  margin-left: 40px;
+  }
+}
+
+
+/* Input OTP */
+.input-otp{
+	display: flex;
+
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.input-otp .input-wrapper{
+	flex: 0 0 16.667%;
+	max-width: 16.667%;
+	
+	padding:  0 15px;
+}
+.input-otp input{
+	
+	border: none;
+	border-bottom: 1px solid #8B8B8B;
+	text-align: center;
+	width: 100%;
+}
+.input-otp input:focus{
+	outline: none;
+}

@@ -9,7 +9,7 @@ function SignUpForm() {
         
         
   return (
-    <Row  className="responsiveForm">
+    <Row>
         <Col md={6} sm={12}> 
             <label>Full Name</label>
             <div className="input-group mb-3">

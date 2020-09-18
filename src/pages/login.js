@@ -10,7 +10,7 @@ function Login() {
             <Header/>
             <Row>
                 <Col md={12}> 
-                    <p className="text-center sign_up">Sign In</p>
+                    <h3 className="text-center onboarding-page_title">Sign In</h3>
                 </Col>
             </Row>
             <LoginForm />

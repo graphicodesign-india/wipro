@@ -11,16 +11,21 @@ function SignUp() {
             <Header/>
             <Row>
                 <Col md={12}> 
-                    <p className="text-center sign_up">Sign Up</p>
+                    <h3 className="text-center onboarding-page_title">Sign Up</h3>
                 </Col>
             </Row>
-            <SignUpForm />
+            <Row className="justify-content-md-center" >
+                <Col xs md={8}>
+                    <SignUpForm />
+                </Col>
+            </Row>
+            
         </Container>
         <Container fluid style={{paddingTop: "20px",background: "#FFFFFF 0% 0% no-repeat padding-box",boxShadow:"0px -3px 20px #00000029",marginTop:"20px",position:"fixed",left:"0",bottom:"0"}}>
-            <Row>
-                <Col md={12}>
+            <Row className="justify-content-md-center" >
+                <Col md={4}>
                 <center>
-                    <button className="btn btn-primary sign_up_submit_btn" style={{backgroundColor:"#1BA7E2"}}> SUBMIT </button>
+                    <button className="btn btn-primary onboarding-btn btn-block">SUBMIT</button>
                     <p style={{font:"normal normal normal 12px/22px Roboto",fontSize:"12px",marginTop:"15px",fontWeight:"500"}}>
                         By clicking on submit I agree to all <a href="">Terms &amp; Conditions</a>
                     </p>

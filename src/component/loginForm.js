@@ -1,38 +1,40 @@
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import InputGroup from 'react-bootstrap/InputGroup';
+import FormControl from 'react-bootstrap/FormControl';
 function LoginForm() {
   return (
-    <Row >
-        <Col md={4} sm={12}></Col>
-        <Col md={4} sm={12}> 
-            <label>Full Name</label>
-            <div className="input-group mb-3">
-                <div className="input-group-prepend">
-                    <span className="input-group-text" style={{backgroundColor:"transparent"}}>Dr</span>
-                </div>
-                <input type="text" className="form-control" placeholder="Enter your full name" />
-            </div>
-        </Col>
-        <Col md={4} sm={12}></Col>
 
-        <Col md={4} sm={12}></Col>
-        <Col md={4} sm={12}>
-        <label>Mobile Number</label>
-            <div className="input-group mb-3">
-                <div className="input-group-prepend">
-                    <span className="input-group-text" style={{backgroundColor:"transparent"}}>+91</span>
-                </div>
-                <input type="text" className="form-control" placeholder="Enter Mobile number" />
-            </div>
-        </Col>
-        <Col md={4} sm={12}></Col>
+    <Row className="justify-content-md-center" >
+        <Col xs md={4}> 
+        <Form>
+            <Form.Group>
+                <Form.Label htmlFor="formName">Full Name</Form.Label>
+                <InputGroup className="mb-2">
+                    <InputGroup.Prepend>
+                    <InputGroup.Text>Dr.</InputGroup.Text>
+                    </InputGroup.Prepend>
+                    <FormControl id="formName" placeholder="Full name" />
+                </InputGroup>
+            </Form.Group>
+            <Form.Group>
+                <Form.Label htmlFor="formMobile">Mobile Number</Form.Label>
+                <InputGroup className="mb-2">
+                    <InputGroup.Prepend>
+                    <InputGroup.Text>+91</InputGroup.Text>
+                    </InputGroup.Prepend>
+                    <FormControl id="formMobile" placeholder="Mobile Number" />
+                </InputGroup>
+            </Form.Group>
 
-        <Col md={4} sm={12}></Col>
-        <Col md={4} sm={12} style={{marginTop:"30px"}}>
-        <button type="button" className="btn btn-primary btn-block" style={{backgroundColor:"#1BA7E2"}}>SUBMIT</button>
+            <Button variant="primary" type="submit" className="btn-block onboarding-btn">
+                Submit
+            </Button>
+        </Form>
         </Col>
-        <Col md={4} sm={12}></Col>
     </Row>
   );
 }
