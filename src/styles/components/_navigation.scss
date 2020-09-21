@@ -1,0 +1,29 @@
+.navigation{
+    background-color: #ffffff;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+    padding: 0 1rem;
+    .logo{
+        max-width: 100px;
+        height: auto;
+    }
+    .navilinks{
+        .nav-link{
+            color: $blue-800 !important;
+            font-size: .875rem;
+            line-height: 1.5rem;
+            letter-spacing: 1px;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+            &.btn{
+                color: #ffffff !important;
+                background-color: $blue-700;
+                border-color: $blue-700;
+                margin-left: 1rem;
+            }
+        }
+    }
+}
+
+

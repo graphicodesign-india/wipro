@@ -1,0 +1,75 @@
+.article-card{
+    margin: 2rem 0;
+
+    .taxo{
+        display: block;
+        color: $orange;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin: 0;
+        margin-bottom: .25rem;
+        margin-top: 2rem;
+        @media (min-width: 768px) {
+            margin-top: 0rem;
+        }
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    .title{
+        display: block;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        color: $grey-900;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    .author{
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        color: $grey-300;
+        margin-bottom: .5rem;
+    }
+    .excerpt{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: $grey-500;
+        margin-bottom: 1.6rem;
+    }
+    .footer{
+        p{
+            margin: 0;
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+        .bookmark{
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+            color: $grey-300;
+            svg{
+                position: relative;
+                top: -3px;
+            }
+            &:hover{
+                text-decoration: none;
+                color: $blue;
+            }
+        }
+        .published{
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+            color: $grey-300;
+        }
+    }
+    hr{
+        margin-top: 2rem;
+    }
+}

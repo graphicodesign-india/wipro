@@ -1,0 +1,41 @@
+// Colors
+
+$blue: #00ADED;
+$blue-800: #1BA6E1;
+$blue-700: #1BA7E2;
+$blue-200: #E3F2F8;
+
+
+$orange: #F2541A;
+
+$grey-900: #000000;
+$grey-500: #4c4c4c;
+$grey-300: #9b9b9b;
+$grey-200: #9b9b9b;
+
+$red: #EA5049;
+$green: #01D116;
+$gray-600: #616161;
+$body-bg: #f5f5f5;
+$color-bg-light: #f5f5f5;
+
+
+
+$font-family-display: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$table-border-width: 2px;
+$table-border-color: #b6b6b6;
+$box-shadow: 0 .2rem 2rem rgba(0, 0, 0, .35);
+$box-shadow-sm: 0 .1rem 1rem rgba(0, 0, 0, .35);
+$border-radius:               .75rem;
+$border-radius-lg:            .75rem;
+$border-radius-sm:            .5rem;
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+
+
+
+.section-title{
+    margin-top: 4.5rem;
+}
