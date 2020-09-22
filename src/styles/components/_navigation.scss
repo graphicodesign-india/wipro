@@ -6,6 +6,21 @@
         max-width: 100px;
         height: auto;
     }
+    .navbar-toggler{
+        border: none;
+    }
+    .navbar-collapse {
+        margin: 2rem 0;
+        @media (min-width: 768px) {
+            margin: 0;
+        }
+    }
+    .navbar-search{
+        color: #1DAFE8;
+    }
+    .navbar-toggler-icon{
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMxREFGRTgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0iZmVhdGhlciBmZWF0aGVyLW1lbnUiPjxsaW5lIHgxPSIzIiB5MT0iMTIiIHgyPSIyMSIgeTI9IjEyIj48L2xpbmU+PGxpbmUgeDE9IjMiIHkxPSI2IiB4Mj0iMjEiIHkyPSI2Ij48L2xpbmU+PGxpbmUgeDE9IjMiIHkxPSIxOCIgeDI9IjIxIiB5Mj0iMTgiPjwvbGluZT48L3N2Zz4=") !important;
+    }
     .navilinks{
         .nav-link{
             color: $blue-800 !important;
@@ -21,6 +36,10 @@
                 background-color: $blue-700;
                 border-color: $blue-700;
                 margin-left: 1rem;
+                margin-top: 2rem;
+                @media (min-width: 768px) {
+                    margin-top: 0;
+                }
             }
         }
     }

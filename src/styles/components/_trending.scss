@@ -4,7 +4,7 @@
     .taxo{
         display: block;
         color: $orange;
-        font-size: 0.875rem;
+        font-size: 0.625rem;
         line-height: 1.5rem;
         text-transform: uppercase;
         font-weight: 700;
@@ -14,6 +14,7 @@
         margin-top: 2rem;
         @media (min-width: 768px) {
             margin-top: 0rem;
+            font-size: 0.875rem;
         }
         &:hover{
             text-decoration: none;
@@ -21,24 +22,36 @@
     }
     .title{
         display: block;
-        font-size: 1.125rem;
-        line-height: 1.75rem;
+        font-size: 1rem;
+        line-height: 1.25rem;
         color: $grey-900;
         &:hover{
             text-decoration: none;
         }
+        @media (min-width: 768px) {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+        }
     }
     .author{
-        font-size: 0.875rem;
+        font-size: 0.625rem;
         line-height: 1.5rem;
         color: $grey-300;
         margin-bottom: .5rem;
+        @media (min-width: 768px) {
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+        }
     }
     .excerpt{
-        font-size: 1rem;
-        line-height: 1.5rem;
+        font-size: .75rem;
+        line-height: 1.125rem;
         color: $grey-500;
         margin-bottom: 1.6rem;
+        @media (min-width: 768px) {
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
     }
     .footer{
         p{
@@ -51,9 +64,13 @@
             float: right;
         }
         .bookmark{
-            font-size: 0.875rem;
-            line-height: 1.5rem;
+            font-size: 0.625rem;
+            line-height: 1.125rem;
             color: $grey-300;
+            @media (min-width: 768px) {
+                font-size: 0.875rem;
+                line-height: 1.5rem;
+            }
             svg{
                 position: relative;
                 top: -3px;
@@ -64,9 +81,13 @@
             }
         }
         .published{
-            font-size: 0.875rem;
-            line-height: 1.5rem;
+            font-size: 0.625rem;
+            line-height: 1.125rem;
             color: $grey-300;
+            @media (min-width: 768px) {
+                font-size: 0.875rem;
+                line-height: 1.5rem;
+            }
         }
     }
     hr{

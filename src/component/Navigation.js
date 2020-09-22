@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import {Container, Navbar, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap';
-
+import {Container, Navbar, Nav, NavDropdown,Row, Col,InputGroup, FormControl, Button} from 'react-bootstrap';
+import { Search } from 'react-feather';
 
 
 function Navigation() {
+  const [searchBox, setSearchBox] = useState(false);
+  function toggleSearch () {
+    if(!searchBox) setSearchBox(true);
+    else setSearchBox(false);
+    }
   return (
         <>
             <Navbar bg="white" expand="lg" className="navigation">
                 <Navbar.Brand><Link to="/"><img className="logo" src={require('../images/logo.png')}></img></Link></Navbar.Brand>
+                <Button onClick={toggleSearch} variant="link" className="ml-auto d-block d-md-none navbar-search"><Search /></Button>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto navilinks">
@@ -23,8 +29,29 @@ function Navigation() {
                         <Nav.Link href="#link">Contact us</Nav.Link>
                         <Nav.Link href='/login' className="btn btn-primary">Sign In</Nav.Link>
                     </Nav>
-            </Navbar.Collapse>
+                </Navbar.Collapse>
             </Navbar>
+            { searchBox == true &&
+                <section className="hero searchbox">
+                <Container>
+                    <Row>
+                        <Col xs={12}>
+                            <InputGroup className="search-box mb-3">
+                                <InputGroup.Prepend>
+                                <InputGroup.Text id="search"><Search /></InputGroup.Text>
+                                </InputGroup.Prepend>
+                                <FormControl
+                                placeholder="Search for Covid Resources: Articles, blogs, ..."
+                                aria-label="Search"
+                                aria-describedby="Search for Covid Resources: Articles, blogs, ..."
+                                />
+                            </InputGroup>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+            }
+
         </>
   );
 }

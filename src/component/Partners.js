@@ -22,7 +22,7 @@ function Partners() {
                                     <li><img src={require('../images/partner-logo-2.png')} /></li>
                                 </ul>
                             </div>
-                            <hr />
+                            <hr className="d-none d-md-block" />
                         </Col>
                     </Row>
                 </Container>

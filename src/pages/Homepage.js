@@ -1,6 +1,7 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 
+import styles from './Homepage.module.css';
 import Navigation from '../component/Navigation';
 import Hero from '../component/Hero';
 import Partners from '../component/Partners';
@@ -20,7 +21,7 @@ function Homepage() {
             <Container>
               <Row>
                 <Col xs={12}>
-                  <div className="section-title">
+                  <div className={styles.section_title}>
                     <h2>Trending</h2>
                   </div>
                   <Trending 
@@ -40,11 +41,15 @@ function Homepage() {
                   publishedOn="Aug 23, 2020"
                   />
                 </Col>
+                <Col className="d-block d-md-none text-center">
+                  <Button variant="link" className={styles.view_all}>View All</Button>
+                </Col>
               </Row>
-              <Row>
+              <Row className="d-none d-md-flex">
                 <Col xs={12}>
-                  <div className="section-title">
+                  <div className={styles.section_title}>
                     <h2>Recently Added</h2>
+                    <Button variant="link" className={styles.link}>View All</Button>
                   </div>
                 </Col>
 

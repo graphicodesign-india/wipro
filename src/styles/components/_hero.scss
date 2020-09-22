@@ -1,7 +1,14 @@
 .hero{
-    background-color: $blue-200;
-    padding: 40px 0 60px 0;
-
+    background-color: #ffffff;
+    padding: 2rem 0 1.25rem 0;
+    &.searchbox{
+        background-color: $blue-200;
+        padding: 1.25rem 0;
+    }
+    @media (min-width: 768px) {
+        background-color: $blue-200;
+        padding: 2.5rem 0 3.75rem 0;
+    }
     .content{
         h1{
             text-align: center;
@@ -60,8 +67,11 @@
             border: none;
         }
         .form-control{
-            padding: 2rem 1rem;
+            padding: 2rem 0rem 2rem .25rem;
             border: none;
+            @media (min-width: 768px) {
+                padding: 2rem 1rem;
+            }
             &:focus{
                 outline: none;
                 box-shadow: none;

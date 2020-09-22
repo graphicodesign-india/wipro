@@ -1,0 +1,35 @@
+.section_title{
+    margin-top: 2rem;
+    position: relative;
+}
+.section_title h2{
+    font-size: 1.25rem;
+}
+@media (min-width: 768px) {
+    .section_title{
+        margin-top: 4.5rem;
+        position: relative;
+    }
+    .section_title h2{
+        font-size: 2rem;
+    }
+}
+.link{
+    text-decoration: underline !important;
+    text-transform: uppercase !important;
+    color: #1BA7E2 !important;
+    font-weight: 700 !important;
+    margin:  0 !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.875rem !important;
+}
+
+.view_all{
+    text-decoration: underline !important;
+    text-transform: uppercase !important;
+    color: #1BA7E2 !important;
+    font-weight: 700 !important;
+    margin: 2rem 0 !important;
+}

@@ -1,30 +1,55 @@
 .partners{
+    background-color: #F9F9F9;
+
+    @media (min-width: 768px) {
+        background-color: #FFFFFF;
+    }
     .content{
         h5{
-            font-weight: 600;
-            font-size: 1.125rem;
-            line-height: 1.5rem;
-            opacity: .5;
+            font-weight: 700;
+            font-size: .625rem;
+            line-height: .875rem;
+            opacity: .3;
             text-align: center;
-            margin: 2rem 0 3rem 0;
+            margin: 1rem 0 1rem 0;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+            @media (min-width: 768px) {
+                font-weight: 600;
+                font-size: 1.125rem;
+                line-height: 1.5rem;
+                opacity: .5;
+                text-align: center;
+                margin: 2rem 0 3rem 0;
+                text-transform: initial;
+            }
         }
         .partners-logo{
             margin: 0;
             padding: 0;
             list-style: none;
             display: flex;
-            flex-wrap: wrap;
             margin-right: -15px;
             margin-left: -15px;
             align-items: center;
+            overflow: scroll;
             li{
-                -ms-flex: 0 0 16.6667%;
-                flex: 0 0 16.6667%;
-                max-width: 16.6667%;
+                -ms-flex: 0 0 25%;
+                flex: 0 0 25%;
+                max-width: 25%;
                 text-align: center;
                 padding-right: 15px;
                 padding-left: 15px;
                 margin-bottom: 2rem;
+                img{
+                    max-width: 100%;
+                    height: auto;
+                }
+                @media (min-width: 768px) {
+                    -ms-flex: 0 0 16.6667%;
+                    flex: 0 0 16.6667%;
+                    max-width: 16.6667%;
+                }
             }
         }
     }

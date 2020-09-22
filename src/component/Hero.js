@@ -21,7 +21,7 @@ function Hero() {
                                 </ul>
                             </div>
                         </Col>
-                        <Col xs={12}>
+                        <Col xs={12} className="d-none d-md-block">
                             <InputGroup className="search-box mb-3">
                                 <InputGroup.Prepend>
                                 <InputGroup.Text id="search"><Search /></InputGroup.Text>
