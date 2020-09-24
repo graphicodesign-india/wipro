@@ -2,6 +2,7 @@
     background-color: #ffffff;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
     padding: 0 1rem;
+    z-index: 2;
     .logo{
         max-width: 100px;
         height: auto;
@@ -37,8 +38,10 @@
                 border-color: $blue-700;
                 margin-left: 1rem;
                 margin-top: 2rem;
+                width: 8rem;
                 @media (min-width: 768px) {
                     margin-top: 0;
+                    width: auto;
                 }
             }
         }

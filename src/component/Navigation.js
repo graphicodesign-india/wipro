@@ -6,16 +6,24 @@ import { Search } from 'react-feather';
 
 function Navigation() {
   const [searchBox, setSearchBox] = useState(false);
+  const [overlay, setOverlay] = useState(false);
   function toggleSearch () {
     if(!searchBox) setSearchBox(true);
     else setSearchBox(false);
     }
+    function toggleOverlay () {
+      if(!overlay) setOverlay(true);
+      else setOverlay(false);
+      }
   return (
         <>
+        { overlay == true &&
+            <div style={{position:"fixed",width:"100%",height:"100%",zIndex:1,top:0,left:0,background:"rgba(0,0,0,0.7)"}}></div>
+        }
             <Navbar bg="white" expand="lg" className="navigation">
                 <Navbar.Brand><Link to="/"><img className="logo" src={require('../images/logo.png')}></img></Link></Navbar.Brand>
                 <Button onClick={toggleSearch} variant="link" className="ml-auto d-block d-md-none navbar-search"><Search /></Button>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleOverlay} />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto navilinks">
                         <NavDropdown title="Resources" id="basic-nav-dropdown">
