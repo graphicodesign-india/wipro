@@ -4,10 +4,13 @@ import Homepage from './pages/Homepage';
 import SignUp from './pages/sign_up';
 import Login from './pages/login';
 import Otp from './pages/otp';
+import Contact from './pages/contact/Contact';
 function App() {
   return (
     <Router>
         <Switch>
+
+          <Route path="/contact">  <Contact /> </Route>
           <Route path="/sign-up">  <SignUp /> </Route>
           <Route path="/login"> <Login /> </Route>
           <Route path="/otp"> <Otp /> </Route>

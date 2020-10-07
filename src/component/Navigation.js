@@ -34,7 +34,7 @@ function Navigation() {
                             <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link href="#home">About us</Nav.Link>
-                        <Nav.Link href="#link">Contact us</Nav.Link>
+                        <Nav.Link to="/contact">Contact us</Nav.Link>
                         <Nav.Link href='/login' className="btn btn-primary">Sign In</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
