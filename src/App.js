@@ -5,11 +5,15 @@ import SignUp from './pages/sign_up';
 import Login from './pages/login';
 import Otp from './pages/otp';
 import Contact from './pages/contact/Contact';
+import ResourcesDetails from './pages/resources/ResourcesDetails';
+import ResourcesVideo from './pages/resources/ResourcesDetailsVideo';
 function App() {
   return (
     <Router>
         <Switch>
 
+          <Route path="/resourcesvideo">  <ResourcesVideo /> </Route>
+          <Route path="/resources">  <ResourcesDetails /> </Route>
           <Route path="/contact">  <Contact /> </Route>
           <Route path="/sign-up">  <SignUp /> </Route>
           <Route path="/login"> <Login /> </Route>
