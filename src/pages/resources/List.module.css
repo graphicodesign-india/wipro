@@ -1,0 +1,46 @@
+.breadcrumbs{
+    margin: 10px 0;
+}
+.breadcrumbs a{
+    color: #1BA7E2;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+}
+.breadcrumbs a:hover,
+.breadcrumbs a:focus{
+    text-decoration: none;
+}
+.breadcrumbs a.current{
+    color: #000000;
+}
+.breadcrumbs .space{
+    color: #767676;
+    margin: 0 10px;
+}
+.dropdown{
+    display: inline-block !important;
+}
+#dropdown::after{
+    display: none !important;
+}
+
+.dropdownform{
+    width: calc(100vw - 30px);
+    padding: 20px;
+}
+.dfheader{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+.dfheader:first-child{
+    margin-top: 0px;
+}
+.dfinput{
+    margin-bottom: 8px !important;
+}
+
+.dropdownform.extra{
+    padding: 0;
+}

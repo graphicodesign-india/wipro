@@ -7,11 +7,13 @@ import Otp from './pages/otp';
 import Contact from './pages/contact/Contact';
 import ResourcesDetails from './pages/resources/ResourcesDetails';
 import ResourcesVideo from './pages/resources/ResourcesDetailsVideo';
+import List from './pages/resources/ResourcesList';
 function App() {
   return (
     <Router>
         <Switch>
 
+          <Route path="/list">  <List /> </Route>
           <Route path="/resourcesvideo">  <ResourcesVideo /> </Route>
           <Route path="/resources">  <ResourcesDetails /> </Route>
           <Route path="/contact">  <Contact /> </Route>

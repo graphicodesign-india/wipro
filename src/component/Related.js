@@ -21,6 +21,7 @@ function Related() {
             <h3>Effect of Remdesivir vs Standard Care on Clinical Status at 11 Days in Patients</h3>
             <p>By: Dr Krishna Seshadhri • Aug 23, 2020</p>
             <p className={styles.excerpt}>Patients with moderate COVID19 randomised to 5 days of remdesivir performed clinically better than performed clinically better than performed...</p>
+            <hr className="d-block d-md-none" />
         </div>
         </div>
         </>
